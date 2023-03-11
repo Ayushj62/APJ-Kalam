@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100&display=swap');
+
+body {
+  background-color: #d50000;
+  background-image:
+    repeating-linear-gradient(45deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8) 100px,
+      transparent 0px,
+      transparent 200px),
+    repeating-linear-gradient(-45deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5) 100px,
+      transparent 0px,
+      transparent 200px);
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.designer-box {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+
+.designer-box h1 {
+  font-family: Arial, sans-serif;
+  font-size: 60px;
+  color: #555;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.profile img {
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(3, 3, 3, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+.summary {
+  margin-top: 0cap;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #eeeeee;
+  mix-blend-mode: difference;
+}
+
+.tribute-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  animation: move 2s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(20px, 20px);
+  }
+}
+
+
+
+h2 {
+  font-size: 35px;
+  color: #f9f0f0;
+  text-align: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.credit {
+  text-align: center;
+  font-size: 14px;
+  /* change this to your preferred font size */
+  color: #f4faf4;
+  /* change this to your preferred text color */
+  margin-top: 10px;
+  /* change this to add some space between the div and the content above it */
+  padding: 5px;
+  /* add some padding to make the text more readable */
+  border-radius: 5px;
+  /* add some border radius to round the corners of the div */
+}
+
+.credit a {
+  display: inline-block;
+  background-color: rgb(255, 38, 116);
+  /* change this to your preferred neon RGB color */
+  padding: 2px 5px;
+  /* adjust the padding to your preferred values */
+  border-radius: 3px;
+  /* adjust the border radius to your preferred values */
+  color: #fff;
+  /* change this to your preferred text color */
+}
+
+/* For devices with a screen width of 768px or less */
+@media (max-width: 768px) {
+  .designer-box {
+    width: 90%;
+    /* Reduce the width of the designer box */
+  }
+
+  .designer-box h1 {
+    font-size: 40px;
+    /* Reduce the font size of the h1 heading */
+  }
+
+  .profile {
+    height: auto;
+    /* Remove the fixed height of the profile section */
+  }
+
+  .profile img {
+    width: 80%;
+    /* Reduce the width of the profile image */
+  }
+
+  h2 {
+    font-size: 30px;
+    /* Reduce the font size of the h2 heading */
+  }
+}
+
+/* For devices with a screen width of 576px or less */
+@media (max-width: 576px) {
+  .designer-box {
+    padding: 10px;
+    /* Reduce the padding of the designer box */
+  }
+
+  .designer-box h1 {
+    font-size: 30px;
+    /* Reduce the font size of the h1 heading */
+  }
+
+  .profile img {
+    width: 60%;
+    /* Reduce the width of the profile image */
+  }
+
+  h2 {
+    font-size: 25px;
+    /* Reduce the font size of the h2 heading */
+  }
+}

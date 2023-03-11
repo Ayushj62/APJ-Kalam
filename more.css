@@ -1,0 +1,100 @@
+body {
+    background-image: url('wp6598985.jpg');
+    background-size: cover;
+    /* This will make sure the image covers the entire background */
+}
+
+#tribute-data {
+    text-align: center;
+    font-family: "Your stylish font family", sans-serif;
+    /* change "Your stylish font family" to the name of the font family you want to use */
+}
+
+#tribute-data h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: #090909;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    color: rgb(233, 234, 235);
+}
+
+.credit {
+    text-align: right;
+    font-size: 14px;
+    /* change this to your preferred font size */
+    color: #f4faf4;
+    /* change this to your preferred text color */
+    margin-top: 10px;
+    /* change this to add some space between the div and the content above it */
+    padding: 5px;
+    /* add some padding to make the text more readable */
+    border-radius: 5px;
+    /* add some border radius to round the corners of the div */
+}
+
+.credit a {
+    display: inline-block;
+    background-color: rgb(255, 38, 116);
+    /* change this to your preferred neon RGB color */
+    padding: 2px 5px;
+    /* adjust the padding to your preferred values */
+    border-radius: 3px;
+    /* adjust the border radius to your preferred values */
+    color: #fff;
+    /* change this to your preferred text color */
+}
+
+/* For screens with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+
+    /* Change the font size of the title and the text */
+    .title-APJ {
+        font-size: 24px;
+    }
+
+    #tribute-data p {
+        font-size: 14px;
+    }
+
+    /* Center the image */
+    #tribute-img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* For screens with a maximum width of 900px */
+@media only screen and (max-width: 900px) {
+
+    /* Change the width of the image */
+    #tribute-img {
+        width: 80%;
+    }
+}
+
+.more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    animation: move 2s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(20px, 20px);
+    }
+}
